@@ -1,0 +1,15 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=4824
+
+The pencil plugin aspires to make Vim as powerful a tool for writers as it is for coders by focusing narrowly on the handful of tweaks needed to smooth the path to writing prose.
+
+Features of the pencil plugin:
+
+* For editing files in text, markdown, textile, and other prose-oriented file types
+* Agnostic on soft line wrap versus hard line breaks, supporting both
+* Auto-detects wrap mode via modeline and sampling
+* Adjusts navigation key mappings to suit the wrap mode
+* Creates undo points on common punctuation
+* When using hard line breaks, enables autoformat while inserting text
+* Buffer-scoped configuration (leaves your global settings alone)
+
+The latest version of this plugin, including configuration details and a brief animated demo, can be found at: https://github.com/reedes/vim-pencil
