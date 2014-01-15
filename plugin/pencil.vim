@@ -36,9 +36,22 @@ if !exists('g:pencil#joinspaces')
 endif
 
 if !exists('g:pencil#cursorwrap')
-  " by default, h/l and cursor keys will wrap around hard 
+  " by default, h/l and cursor keys will wrap around hard
   " linebreaks. Set to 0 if you don't want this behavior
   let g:pencil#cursorwrap = 1
+endif
+
+if !exists('g:pencil#softDetectSample')
+  " if no modeline, read as many as this many lines at
+  " start of file in attempt to detect at least one line
+  " whose byte count exceeds g:pencil#softDetectThreshold
+  let g:pencil#softDetectSample = 20
+endif
+
+if !exists('g:pencil#softDetectThreshold')
+  " if the byte count of at least one sampled line exceeds
+  " this number, then pencil assumes soft line wrapping
+  let g:pencil#softDetectThreshold = 130
 endif
 
 " # Commands
